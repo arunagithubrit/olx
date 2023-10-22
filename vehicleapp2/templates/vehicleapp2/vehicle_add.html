@@ -1,0 +1,27 @@
+
+{%extends 'base.html'%}
+
+{% block title_block%}
+<title>vehicle Add</title>
+{%endblock%}
+
+{%block body_block%}
+
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-3"></div>
+            <div class="col-6">
+                <h1>Add Vehicles!!!!!!</h1>
+                <form action="" method="post" class="p-4 border shadow" enctype="multipart/form-data">
+                    {%csrf_token%}
+                    {{form.as_p}}
+                    <button type="submit" class="btn btn-outline-info form-control">ADD Vehicles</button>
+                   </form> 
+            </div>
+            <div class="col-3"></div>
+        </div>
+    </div>
+</body>
+{%endblock%}
