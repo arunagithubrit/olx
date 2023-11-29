@@ -1,5 +1,6 @@
 from django.urls import path
-from vehicleapp2.views import SignUpView,SignInView,IndexView,VehicleCreateView,VehicleListView,VehicleDetailView,VehicleUpdateView,remove_vehicle
+from vehicleapp2.views import SignUpView,SignInView,IndexView,VehicleCreateView,\
+VehicleListView,VehicleDetailView,VehicleUpdateView,remove_vehicle
 
 
 

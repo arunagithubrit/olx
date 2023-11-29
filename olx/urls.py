@@ -32,5 +32,8 @@ urlpatterns = [
     path('vehicles/<int:pk>/change',VehicleUpdateView.as_view(),name="vehicle-change"),
     path('signup',SignUpView.as_view(),name="register"),
     path('signin',SignInView.as_view(),name="signin"),
-    path('v1/vehicles/',include('vehicleapp2.urls'))
+    path('v1/vehicles/',include('vehicleapp2.urls')),
+    path('vehicleapi/',include("vehicleapp_api.urls")),
+    path('vehicleapp2api/',include("vehicleapp2_api.urls")),
+    
 ]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

@@ -39,6 +39,9 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'vehicleapp',
     'vehicleapp2',
+    'rest_framework',
+    'vehicleapp_api',
+    'vehicleapp2_api',
 ]
 
 MIDDLEWARE = [
